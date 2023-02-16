@@ -58,7 +58,7 @@
             this.mnuHelp});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+			this.menuStrip1.Size = new System.Drawing.Size(794, 24);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -73,8 +73,9 @@
 			// mnuExit
 			// 
 			this.mnuExit.Name = "mnuExit";
-			this.mnuExit.Size = new System.Drawing.Size(93, 22);
+			this.mnuExit.Size = new System.Drawing.Size(180, 22);
 			this.mnuExit.Text = "Exit";
+			this.mnuExit.Click += new System.EventHandler(this.mnuExit_Click);
 			// 
 			// mnuCategory
 			// 
@@ -90,26 +91,30 @@
 			// mnuManufacturer
 			// 
 			this.mnuManufacturer.Name = "mnuManufacturer";
-			this.mnuManufacturer.Size = new System.Drawing.Size(146, 22);
+			this.mnuManufacturer.Size = new System.Drawing.Size(180, 22);
 			this.mnuManufacturer.Text = "Manufacturer";
+			this.mnuManufacturer.Click += new System.EventHandler(this.mnuManufacturer_Click);
 			// 
 			// mnuComputer
 			// 
 			this.mnuComputer.Name = "mnuComputer";
-			this.mnuComputer.Size = new System.Drawing.Size(146, 22);
+			this.mnuComputer.Size = new System.Drawing.Size(180, 22);
 			this.mnuComputer.Text = "Computer";
+			this.mnuComputer.Click += new System.EventHandler(this.mnuComputer_Click);
 			// 
 			// mnuStaff
 			// 
 			this.mnuStaff.Name = "mnuStaff";
-			this.mnuStaff.Size = new System.Drawing.Size(146, 22);
+			this.mnuStaff.Size = new System.Drawing.Size(180, 22);
 			this.mnuStaff.Text = "Staff";
+			this.mnuStaff.Click += new System.EventHandler(this.mnuStaff_Click);
 			// 
 			// mnuCustomer
 			// 
 			this.mnuCustomer.Name = "mnuCustomer";
-			this.mnuCustomer.Size = new System.Drawing.Size(146, 22);
+			this.mnuCustomer.Size = new System.Drawing.Size(180, 22);
 			this.mnuCustomer.Text = "Customer";
+			this.mnuCustomer.Click += new System.EventHandler(this.mnuCustomer_Click);
 			// 
 			// billToolStripMenuItem
 			// 
@@ -122,8 +127,9 @@
 			// mnuBill
 			// 
 			this.mnuBill.Name = "mnuBill";
-			this.mnuBill.Size = new System.Drawing.Size(90, 22);
+			this.mnuBill.Size = new System.Drawing.Size(180, 22);
 			this.mnuBill.Text = "Bill";
+			this.mnuBill.Click += new System.EventHandler(this.mnuBill_Click);
 			// 
 			// mnuSearch
 			// 
@@ -178,12 +184,13 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(794, 451);
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "frmMain";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "PC Manager";
+			this.Load += new System.EventHandler(this.frmMain_Load);
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
 			this.ResumeLayout(false);

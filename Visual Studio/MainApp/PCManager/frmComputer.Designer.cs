@@ -29,27 +29,27 @@
 		private void InitializeComponent()
 		{
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
-			this.label8 = new System.Windows.Forms.Label();
-			this.txtComuterID = new System.Windows.Forms.TextBox();
-			this.txtComputerName = new System.Windows.Forms.TextBox();
-			this.cboManufacturer = new System.Windows.Forms.ComboBox();
-			this.txtCount = new System.Windows.Forms.TextBox();
-			this.txtPriceIn = new System.Windows.Forms.TextBox();
-			this.txtPriceOut = new System.Windows.Forms.TextBox();
-			this.txtPicture = new System.Windows.Forms.TextBox();
-			this.btnOpen = new System.Windows.Forms.Button();
 			this.rtbDetail = new System.Windows.Forms.RichTextBox();
+			this.btnOpen = new System.Windows.Forms.Button();
+			this.txtPicture = new System.Windows.Forms.TextBox();
+			this.txtPriceOut = new System.Windows.Forms.TextBox();
+			this.txtPriceIn = new System.Windows.Forms.TextBox();
+			this.txtCount = new System.Windows.Forms.TextBox();
+			this.cboManufacturer = new System.Windows.Forms.ComboBox();
+			this.txtComputerName = new System.Windows.Forms.TextBox();
+			this.txtComuterID = new System.Windows.Forms.TextBox();
+			this.label8 = new System.Windows.Forms.Label();
+			this.label7 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.picComputer = new System.Windows.Forms.PictureBox();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.dgvComputer = new System.Windows.Forms.DataGridView();
 			this.btnSave = new System.Windows.Forms.Button();
 			this.btnEdit = new System.Windows.Forms.Button();
 			this.btnDelete = new System.Windows.Forms.Button();
@@ -60,9 +60,9 @@
 			this.btnSearch = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picComputer)).BeginInit();
 			this.groupBox3.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvComputer)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// groupBox1
@@ -91,127 +91,13 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Computer Information";
 			// 
-			// label1
+			// rtbDetail
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(17, 26);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(60, 13);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Comuter ID";
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(17, 52);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(77, 13);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "Comuter Name";
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(17, 105);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(35, 13);
-			this.label3.TabIndex = 2;
-			this.label3.Text = "Count";
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(17, 131);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(43, 13);
-			this.label4.TabIndex = 3;
-			this.label4.Text = "Price In";
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(17, 78);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(70, 13);
-			this.label5.TabIndex = 4;
-			this.label5.Text = "Manufacturer";
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(17, 157);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(51, 13);
-			this.label6.TabIndex = 5;
-			this.label6.Text = "Price Out";
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(303, 26);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(40, 13);
-			this.label7.TabIndex = 6;
-			this.label7.Text = "Picture";
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Location = new System.Drawing.Point(303, 52);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(34, 13);
-			this.label8.TabIndex = 7;
-			this.label8.Text = "Detail";
-			// 
-			// txtComuterID
-			// 
-			this.txtComuterID.Location = new System.Drawing.Point(107, 23);
-			this.txtComuterID.Name = "txtComuterID";
-			this.txtComuterID.Size = new System.Drawing.Size(150, 20);
-			this.txtComuterID.TabIndex = 8;
-			// 
-			// txtComputerName
-			// 
-			this.txtComputerName.Location = new System.Drawing.Point(107, 49);
-			this.txtComputerName.Name = "txtComputerName";
-			this.txtComputerName.Size = new System.Drawing.Size(150, 20);
-			this.txtComputerName.TabIndex = 9;
-			// 
-			// cboManufacturer
-			// 
-			this.cboManufacturer.FormattingEnabled = true;
-			this.cboManufacturer.Location = new System.Drawing.Point(107, 75);
-			this.cboManufacturer.Name = "cboManufacturer";
-			this.cboManufacturer.Size = new System.Drawing.Size(150, 21);
-			this.cboManufacturer.TabIndex = 10;
-			// 
-			// txtCount
-			// 
-			this.txtCount.Location = new System.Drawing.Point(107, 102);
-			this.txtCount.Name = "txtCount";
-			this.txtCount.Size = new System.Drawing.Size(150, 20);
-			this.txtCount.TabIndex = 11;
-			// 
-			// txtPriceIn
-			// 
-			this.txtPriceIn.Location = new System.Drawing.Point(107, 128);
-			this.txtPriceIn.Name = "txtPriceIn";
-			this.txtPriceIn.Size = new System.Drawing.Size(150, 20);
-			this.txtPriceIn.TabIndex = 12;
-			// 
-			// txtPriceOut
-			// 
-			this.txtPriceOut.Location = new System.Drawing.Point(107, 154);
-			this.txtPriceOut.Name = "txtPriceOut";
-			this.txtPriceOut.Size = new System.Drawing.Size(150, 20);
-			this.txtPriceOut.TabIndex = 13;
-			// 
-			// txtPicture
-			// 
-			this.txtPicture.Location = new System.Drawing.Point(370, 23);
-			this.txtPicture.Name = "txtPicture";
-			this.txtPicture.Size = new System.Drawing.Size(150, 20);
-			this.txtPicture.TabIndex = 14;
+			this.rtbDetail.Location = new System.Drawing.Point(370, 49);
+			this.rtbDetail.Name = "rtbDetail";
+			this.rtbDetail.Size = new System.Drawing.Size(246, 125);
+			this.rtbDetail.TabIndex = 16;
+			this.rtbDetail.Text = "";
 			// 
 			// btnOpen
 			// 
@@ -222,17 +108,131 @@
 			this.btnOpen.Text = "Open...";
 			this.btnOpen.UseVisualStyleBackColor = true;
 			// 
-			// rtbDetail
+			// txtPicture
 			// 
-			this.rtbDetail.Location = new System.Drawing.Point(370, 49);
-			this.rtbDetail.Name = "rtbDetail";
-			this.rtbDetail.Size = new System.Drawing.Size(246, 125);
-			this.rtbDetail.TabIndex = 16;
-			this.rtbDetail.Text = "";
+			this.txtPicture.Location = new System.Drawing.Point(370, 23);
+			this.txtPicture.Name = "txtPicture";
+			this.txtPicture.Size = new System.Drawing.Size(150, 20);
+			this.txtPicture.TabIndex = 14;
+			// 
+			// txtPriceOut
+			// 
+			this.txtPriceOut.Location = new System.Drawing.Point(107, 154);
+			this.txtPriceOut.Name = "txtPriceOut";
+			this.txtPriceOut.Size = new System.Drawing.Size(150, 20);
+			this.txtPriceOut.TabIndex = 13;
+			// 
+			// txtPriceIn
+			// 
+			this.txtPriceIn.Location = new System.Drawing.Point(107, 128);
+			this.txtPriceIn.Name = "txtPriceIn";
+			this.txtPriceIn.Size = new System.Drawing.Size(150, 20);
+			this.txtPriceIn.TabIndex = 12;
+			// 
+			// txtCount
+			// 
+			this.txtCount.Location = new System.Drawing.Point(107, 102);
+			this.txtCount.Name = "txtCount";
+			this.txtCount.Size = new System.Drawing.Size(150, 20);
+			this.txtCount.TabIndex = 11;
+			// 
+			// cboManufacturer
+			// 
+			this.cboManufacturer.FormattingEnabled = true;
+			this.cboManufacturer.Location = new System.Drawing.Point(107, 75);
+			this.cboManufacturer.Name = "cboManufacturer";
+			this.cboManufacturer.Size = new System.Drawing.Size(150, 21);
+			this.cboManufacturer.TabIndex = 10;
+			// 
+			// txtComputerName
+			// 
+			this.txtComputerName.Location = new System.Drawing.Point(107, 49);
+			this.txtComputerName.Name = "txtComputerName";
+			this.txtComputerName.Size = new System.Drawing.Size(150, 20);
+			this.txtComputerName.TabIndex = 9;
+			// 
+			// txtComuterID
+			// 
+			this.txtComuterID.Location = new System.Drawing.Point(107, 23);
+			this.txtComuterID.Name = "txtComuterID";
+			this.txtComuterID.Size = new System.Drawing.Size(150, 20);
+			this.txtComuterID.TabIndex = 8;
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Location = new System.Drawing.Point(303, 52);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(34, 13);
+			this.label8.TabIndex = 7;
+			this.label8.Text = "Detail";
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Location = new System.Drawing.Point(303, 26);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(40, 13);
+			this.label7.TabIndex = 6;
+			this.label7.Text = "Picture";
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Location = new System.Drawing.Point(17, 157);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(51, 13);
+			this.label6.TabIndex = 5;
+			this.label6.Text = "Price Out";
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(17, 78);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(70, 13);
+			this.label5.TabIndex = 4;
+			this.label5.Text = "Manufacturer";
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(17, 131);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(43, 13);
+			this.label4.TabIndex = 3;
+			this.label4.Text = "Price In";
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(17, 105);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(35, 13);
+			this.label3.TabIndex = 2;
+			this.label3.Text = "Count";
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(17, 52);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(77, 13);
+			this.label2.TabIndex = 1;
+			this.label2.Text = "Comuter Name";
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(17, 26);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(60, 13);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "Comuter ID";
 			// 
 			// groupBox2
 			// 
-			this.groupBox2.Controls.Add(this.pictureBox1);
+			this.groupBox2.Controls.Add(this.picComputer);
 			this.groupBox2.Location = new System.Drawing.Point(653, 12);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(179, 190);
@@ -240,17 +240,17 @@
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Picture";
 			// 
-			// pictureBox1
+			// picComputer
 			// 
-			this.pictureBox1.Location = new System.Drawing.Point(6, 19);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(165, 165);
-			this.pictureBox1.TabIndex = 0;
-			this.pictureBox1.TabStop = false;
+			this.picComputer.Location = new System.Drawing.Point(6, 19);
+			this.picComputer.Name = "picComputer";
+			this.picComputer.Size = new System.Drawing.Size(165, 165);
+			this.picComputer.TabIndex = 0;
+			this.picComputer.TabStop = false;
 			// 
 			// groupBox3
 			// 
-			this.groupBox3.Controls.Add(this.dataGridView1);
+			this.groupBox3.Controls.Add(this.dgvComputer);
 			this.groupBox3.Location = new System.Drawing.Point(12, 208);
 			this.groupBox3.Name = "groupBox3";
 			this.groupBox3.Size = new System.Drawing.Size(821, 230);
@@ -258,13 +258,13 @@
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Data";
 			// 
-			// dataGridView1
+			// dgvComputer
 			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(806, 205);
-			this.dataGridView1.TabIndex = 0;
+			this.dgvComputer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvComputer.Location = new System.Drawing.Point(6, 19);
+			this.dgvComputer.Name = "dgvComputer";
+			this.dgvComputer.Size = new System.Drawing.Size(806, 205);
+			this.dgvComputer.TabIndex = 0;
 			// 
 			// btnSave
 			// 
@@ -356,13 +356,14 @@
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
 			this.Name = "frmComputer";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Computer";
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.groupBox2.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picComputer)).EndInit();
 			this.groupBox3.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvComputer)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -388,9 +389,9 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.GroupBox groupBox2;
-		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.PictureBox picComputer;
 		private System.Windows.Forms.GroupBox groupBox3;
-		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridView dgvComputer;
 		private System.Windows.Forms.Button btnSave;
 		private System.Windows.Forms.Button btnEdit;
 		private System.Windows.Forms.Button btnDelete;

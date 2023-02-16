@@ -33,6 +33,11 @@
 			this.btnDelete = new System.Windows.Forms.Button();
 			this.btnAdd = new System.Windows.Forms.Button();
 			this.dgvCustomer = new System.Windows.Forms.DataGridView();
+			this.Customer_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Customer_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Customer_Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Customer_Addr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Customer_Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.chkGender = new System.Windows.Forms.CheckBox();
 			this.txtPhone = new System.Windows.Forms.TextBox();
@@ -47,11 +52,6 @@
 			this.btnExit = new System.Windows.Forms.Button();
 			this.btnSkip = new System.Windows.Forms.Button();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.Customer_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Customer_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Customer_Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Customer_Addr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Customer_Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).BeginInit();
 			this.groupBox2.SuspendLayout();
 			this.groupBox1.SuspendLayout();
@@ -106,6 +106,35 @@
 			this.dgvCustomer.Name = "dgvCustomer";
 			this.dgvCustomer.Size = new System.Drawing.Size(517, 161);
 			this.dgvCustomer.TabIndex = 0;
+			// 
+			// Customer_ID
+			// 
+			this.Customer_ID.FillWeight = 50F;
+			this.Customer_ID.HeaderText = "Customer ID";
+			this.Customer_ID.Name = "Customer_ID";
+			// 
+			// Customer_Name
+			// 
+			this.Customer_Name.HeaderText = "Customer Name";
+			this.Customer_Name.Name = "Customer_Name";
+			this.Customer_Name.Width = 150;
+			// 
+			// Customer_Gender
+			// 
+			this.Customer_Gender.HeaderText = "Gender";
+			this.Customer_Gender.Name = "Customer_Gender";
+			this.Customer_Gender.Width = 70;
+			// 
+			// Customer_Addr
+			// 
+			this.Customer_Addr.HeaderText = "Address";
+			this.Customer_Addr.Name = "Customer_Addr";
+			this.Customer_Addr.Width = 200;
+			// 
+			// Customer_Phone
+			// 
+			this.Customer_Phone.HeaderText = "Phone";
+			this.Customer_Phone.Name = "Customer_Phone";
 			// 
 			// groupBox2
 			// 
@@ -237,35 +266,6 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Customer Information";
 			// 
-			// Customer_ID
-			// 
-			this.Customer_ID.FillWeight = 50F;
-			this.Customer_ID.HeaderText = "Customer ID";
-			this.Customer_ID.Name = "Customer_ID";
-			// 
-			// Customer_Name
-			// 
-			this.Customer_Name.HeaderText = "Customer Name";
-			this.Customer_Name.Name = "Customer_Name";
-			this.Customer_Name.Width = 150;
-			// 
-			// Customer_Gender
-			// 
-			this.Customer_Gender.HeaderText = "Gender";
-			this.Customer_Gender.Name = "Customer_Gender";
-			this.Customer_Gender.Width = 70;
-			// 
-			// Customer_Addr
-			// 
-			this.Customer_Addr.HeaderText = "Address";
-			this.Customer_Addr.Name = "Customer_Addr";
-			this.Customer_Addr.Width = 200;
-			// 
-			// Customer_Phone
-			// 
-			this.Customer_Phone.HeaderText = "Phone";
-			this.Customer_Phone.Name = "Customer_Phone";
-			// 
 			// frmCustomer
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,6 +280,7 @@
 			this.Controls.Add(this.btnSkip);
 			this.Controls.Add(this.groupBox1);
 			this.Name = "frmCustomer";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Customer";
 			((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).EndInit();
 			this.groupBox2.ResumeLayout(false);

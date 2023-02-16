@@ -29,16 +29,16 @@
 		private void InitializeComponent()
 		{
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.txtStaffID = new System.Windows.Forms.TextBox();
-			this.txtStaffName = new System.Windows.Forms.TextBox();
-			this.txtAddr = new System.Windows.Forms.TextBox();
-			this.txtPhone = new System.Windows.Forms.TextBox();
 			this.chkGender = new System.Windows.Forms.CheckBox();
+			this.txtPhone = new System.Windows.Forms.TextBox();
+			this.txtAddr = new System.Windows.Forms.TextBox();
+			this.txtStaffName = new System.Windows.Forms.TextBox();
+			this.txtStaffID = new System.Windows.Forms.TextBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.dgvStaff = new System.Windows.Forms.DataGridView();
 			this.Staff_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,41 +76,43 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Staff Information";
 			// 
-			// label1
+			// chkGender
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(22, 29);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(43, 13);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Staff ID";
+			this.chkGender.AutoSize = true;
+			this.chkGender.Location = new System.Drawing.Point(96, 79);
+			this.chkGender.Name = "chkGender";
+			this.chkGender.Size = new System.Drawing.Size(49, 17);
+			this.chkGender.TabIndex = 9;
+			this.chkGender.Text = "Male";
+			this.chkGender.UseVisualStyleBackColor = true;
 			// 
-			// label2
+			// txtPhone
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(22, 55);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(60, 13);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "Staff Name";
+			this.txtPhone.Location = new System.Drawing.Point(350, 52);
+			this.txtPhone.Name = "txtPhone";
+			this.txtPhone.Size = new System.Drawing.Size(150, 20);
+			this.txtPhone.TabIndex = 8;
 			// 
-			// label3
+			// txtAddr
 			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(22, 80);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(42, 13);
-			this.label3.TabIndex = 2;
-			this.label3.Text = "Gender";
+			this.txtAddr.Location = new System.Drawing.Point(350, 26);
+			this.txtAddr.Name = "txtAddr";
+			this.txtAddr.Size = new System.Drawing.Size(150, 20);
+			this.txtAddr.TabIndex = 7;
 			// 
-			// label4
+			// txtStaffName
 			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(278, 55);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(38, 13);
-			this.label4.TabIndex = 3;
-			this.label4.Text = "Phone";
+			this.txtStaffName.Location = new System.Drawing.Point(96, 52);
+			this.txtStaffName.Name = "txtStaffName";
+			this.txtStaffName.Size = new System.Drawing.Size(150, 20);
+			this.txtStaffName.TabIndex = 6;
+			// 
+			// txtStaffID
+			// 
+			this.txtStaffID.Location = new System.Drawing.Point(96, 26);
+			this.txtStaffID.Name = "txtStaffID";
+			this.txtStaffID.Size = new System.Drawing.Size(150, 20);
+			this.txtStaffID.TabIndex = 5;
 			// 
 			// label5
 			// 
@@ -121,43 +123,41 @@
 			this.label5.TabIndex = 4;
 			this.label5.Text = "Address";
 			// 
-			// txtStaffID
+			// label4
 			// 
-			this.txtStaffID.Location = new System.Drawing.Point(96, 26);
-			this.txtStaffID.Name = "txtStaffID";
-			this.txtStaffID.Size = new System.Drawing.Size(150, 20);
-			this.txtStaffID.TabIndex = 5;
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(278, 55);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(38, 13);
+			this.label4.TabIndex = 3;
+			this.label4.Text = "Phone";
 			// 
-			// txtStaffName
+			// label3
 			// 
-			this.txtStaffName.Location = new System.Drawing.Point(96, 52);
-			this.txtStaffName.Name = "txtStaffName";
-			this.txtStaffName.Size = new System.Drawing.Size(150, 20);
-			this.txtStaffName.TabIndex = 6;
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(22, 80);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(42, 13);
+			this.label3.TabIndex = 2;
+			this.label3.Text = "Gender";
 			// 
-			// txtAddr
+			// label2
 			// 
-			this.txtAddr.Location = new System.Drawing.Point(350, 26);
-			this.txtAddr.Name = "txtAddr";
-			this.txtAddr.Size = new System.Drawing.Size(150, 20);
-			this.txtAddr.TabIndex = 7;
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(22, 55);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(60, 13);
+			this.label2.TabIndex = 1;
+			this.label2.Text = "Staff Name";
 			// 
-			// txtPhone
+			// label1
 			// 
-			this.txtPhone.Location = new System.Drawing.Point(350, 52);
-			this.txtPhone.Name = "txtPhone";
-			this.txtPhone.Size = new System.Drawing.Size(150, 20);
-			this.txtPhone.TabIndex = 8;
-			// 
-			// chkGender
-			// 
-			this.chkGender.AutoSize = true;
-			this.chkGender.Location = new System.Drawing.Point(96, 79);
-			this.chkGender.Name = "chkGender";
-			this.chkGender.Size = new System.Drawing.Size(49, 17);
-			this.chkGender.TabIndex = 9;
-			this.chkGender.Text = "Male";
-			this.chkGender.UseVisualStyleBackColor = true;
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(22, 29);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(43, 13);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "Staff ID";
 			// 
 			// groupBox2
 			// 
@@ -281,6 +281,7 @@
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
 			this.Name = "frmStaff";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Staff";
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
