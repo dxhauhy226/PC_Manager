@@ -74,6 +74,12 @@
 			this.label19 = new System.Windows.Forms.Label();
 			this.cboBillID = new System.Windows.Forms.ComboBox();
 			this.btnSearch = new System.Windows.Forms.Button();
+			this.Computer_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Computer_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.BillDetail_Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.BillDetail_Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.BillDetail_Sale = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.BillDetail_Money = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox3.SuspendLayout();
@@ -375,7 +381,15 @@
 			// 
 			// dgvBill
 			// 
+			this.dgvBill.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dgvBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Computer_ID,
+            this.Computer_Name,
+            this.BillDetail_Count,
+            this.BillDetail_Price,
+            this.BillDetail_Sale,
+            this.BillDetail_Money});
 			this.dgvBill.Location = new System.Drawing.Point(6, 19);
 			this.dgvBill.Name = "dgvBill";
 			this.dgvBill.Size = new System.Drawing.Size(733, 150);
@@ -496,6 +510,36 @@
 			this.btnSearch.Text = "Search";
 			this.btnSearch.UseVisualStyleBackColor = true;
 			// 
+			// Computer_ID
+			// 
+			this.Computer_ID.HeaderText = "Computer ID";
+			this.Computer_ID.Name = "Computer_ID";
+			// 
+			// Computer_Name
+			// 
+			this.Computer_Name.HeaderText = "Computer Name";
+			this.Computer_Name.Name = "Computer_Name";
+			// 
+			// BillDetail_Count
+			// 
+			this.BillDetail_Count.HeaderText = "Count";
+			this.BillDetail_Count.Name = "BillDetail_Count";
+			// 
+			// BillDetail_Price
+			// 
+			this.BillDetail_Price.HeaderText = "Price";
+			this.BillDetail_Price.Name = "BillDetail_Price";
+			// 
+			// BillDetail_Sale
+			// 
+			this.BillDetail_Sale.HeaderText = "Sale";
+			this.BillDetail_Sale.Name = "BillDetail_Sale";
+			// 
+			// BillDetail_Money
+			// 
+			this.BillDetail_Money.HeaderText = "Money";
+			this.BillDetail_Money.Name = "BillDetail_Money";
+			// 
 			// frmBill
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -579,5 +623,11 @@
 		private System.Windows.Forms.Label label19;
 		private System.Windows.Forms.ComboBox cboBillID;
 		private System.Windows.Forms.Button btnSearch;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Computer_ID;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Computer_Name;
+		private System.Windows.Forms.DataGridViewTextBoxColumn BillDetail_Count;
+		private System.Windows.Forms.DataGridViewTextBoxColumn BillDetail_Price;
+		private System.Windows.Forms.DataGridViewTextBoxColumn BillDetail_Sale;
+		private System.Windows.Forms.DataGridViewTextBoxColumn BillDetail_Money;
 	}
 }

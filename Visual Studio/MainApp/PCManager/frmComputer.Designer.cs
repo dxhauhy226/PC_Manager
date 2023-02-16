@@ -58,6 +58,12 @@
 			this.btnSkip = new System.Windows.Forms.Button();
 			this.btnShow = new System.Windows.Forms.Button();
 			this.btnSearch = new System.Windows.Forms.Button();
+			this.Computer_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Computer_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Manufacturer_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Computer_Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Computer_Price_In = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Computer_Price_Out = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.picComputer)).BeginInit();
@@ -260,7 +266,15 @@
 			// 
 			// dgvComputer
 			// 
+			this.dgvComputer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dgvComputer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvComputer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Computer_ID,
+            this.Computer_Name,
+            this.Manufacturer_Name,
+            this.Computer_Count,
+            this.Computer_Price_In,
+            this.Computer_Price_Out});
 			this.dgvComputer.Location = new System.Drawing.Point(6, 19);
 			this.dgvComputer.Name = "dgvComputer";
 			this.dgvComputer.Size = new System.Drawing.Size(806, 205);
@@ -339,6 +353,36 @@
 			this.btnSearch.Text = "Search";
 			this.btnSearch.UseVisualStyleBackColor = true;
 			// 
+			// Computer_ID
+			// 
+			this.Computer_ID.HeaderText = "Computer ID";
+			this.Computer_ID.Name = "Computer_ID";
+			// 
+			// Computer_Name
+			// 
+			this.Computer_Name.HeaderText = "Computer Name";
+			this.Computer_Name.Name = "Computer_Name";
+			// 
+			// Manufacturer_Name
+			// 
+			this.Manufacturer_Name.HeaderText = "Manufacturer";
+			this.Manufacturer_Name.Name = "Manufacturer_Name";
+			// 
+			// Computer_Count
+			// 
+			this.Computer_Count.HeaderText = "Count";
+			this.Computer_Count.Name = "Computer_Count";
+			// 
+			// Computer_Price_In
+			// 
+			this.Computer_Price_In.HeaderText = "Price In";
+			this.Computer_Price_In.Name = "Computer_Price_In";
+			// 
+			// Computer_Price_Out
+			// 
+			this.Computer_Price_Out.HeaderText = "Price Out";
+			this.Computer_Price_Out.Name = "Computer_Price_Out";
+			// 
 			// frmComputer
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -400,5 +444,11 @@
 		private System.Windows.Forms.Button btnSkip;
 		private System.Windows.Forms.Button btnShow;
 		private System.Windows.Forms.Button btnSearch;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Computer_ID;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Computer_Name;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Manufacturer_Name;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Computer_Count;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Computer_Price_In;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Computer_Price_Out;
 	}
 }
