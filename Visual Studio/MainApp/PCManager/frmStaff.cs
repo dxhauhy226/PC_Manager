@@ -157,7 +157,7 @@ namespace PCManager
 				txtAddr.Focus();
 				return;
 			}
-			if (txtPhone.Text.Trim().Length == 0 || txtPhone.Text.Trim().Length < 10)
+			if (txtPhone.Text.Trim().Length == 0 || txtPhone.Text.Trim().Length < 10 || txtPhone.Text.Trim().Length > 10)
 			{
 				MessageBox.Show("Bạn phải nhập điện thoại có 10 số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 				txtPhone.Focus();
