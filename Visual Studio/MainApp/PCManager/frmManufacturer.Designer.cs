@@ -35,14 +35,14 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.dgvManufacturer = new System.Windows.Forms.DataGridView();
+			this.Manufacturer_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Manufacturer_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.btnAdd = new System.Windows.Forms.Button();
 			this.btnDelete = new System.Windows.Forms.Button();
 			this.btnEdit = new System.Windows.Forms.Button();
 			this.btnSave = new System.Windows.Forms.Button();
 			this.btnSkip = new System.Windows.Forms.Button();
 			this.btnExit = new System.Windows.Forms.Button();
-			this.Manufacturer_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Manufacturer_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvManufacturer)).BeginInit();
@@ -56,7 +56,7 @@
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Location = new System.Drawing.Point(62, 12);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(361, 103);
+			this.groupBox1.Size = new System.Drawing.Size(361, 90);
 			this.groupBox1.TabIndex = 0;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Manufacturer";
@@ -96,9 +96,9 @@
 			// groupBox2
 			// 
 			this.groupBox2.Controls.Add(this.dgvManufacturer);
-			this.groupBox2.Location = new System.Drawing.Point(12, 121);
+			this.groupBox2.Location = new System.Drawing.Point(12, 108);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(480, 153);
+			this.groupBox2.Size = new System.Drawing.Size(480, 166);
 			this.groupBox2.TabIndex = 1;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Data";
@@ -111,9 +111,24 @@
             this.Manufacturer_Name});
 			this.dgvManufacturer.Location = new System.Drawing.Point(6, 19);
 			this.dgvManufacturer.Name = "dgvManufacturer";
-			this.dgvManufacturer.Size = new System.Drawing.Size(468, 128);
+			this.dgvManufacturer.Size = new System.Drawing.Size(468, 141);
 			this.dgvManufacturer.TabIndex = 0;
 			this.dgvManufacturer.Click += new System.EventHandler(this.dgvManufacturer_Click);
+			// 
+			// Manufacturer_ID
+			// 
+			this.Manufacturer_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Manufacturer_ID.DataPropertyName = "Manufacturer_ID";
+			this.Manufacturer_ID.FillWeight = 70F;
+			this.Manufacturer_ID.HeaderText = "Manufacturer ID";
+			this.Manufacturer_ID.Name = "Manufacturer_ID";
+			// 
+			// Manufacturer_Name
+			// 
+			this.Manufacturer_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Manufacturer_Name.DataPropertyName = "Manufacturer_Name";
+			this.Manufacturer_Name.HeaderText = "Manufacturer Name";
+			this.Manufacturer_Name.Name = "Manufacturer_Name";
 			// 
 			// btnAdd
 			// 
@@ -174,21 +189,6 @@
 			this.btnExit.Text = "Exit";
 			this.btnExit.UseVisualStyleBackColor = true;
 			this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-			// 
-			// Manufacturer_ID
-			// 
-			this.Manufacturer_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.Manufacturer_ID.DataPropertyName = "Manufacturer_ID";
-			this.Manufacturer_ID.FillWeight = 70F;
-			this.Manufacturer_ID.HeaderText = "Manufacturer ID";
-			this.Manufacturer_ID.Name = "Manufacturer_ID";
-			// 
-			// Manufacturer_Name
-			// 
-			this.Manufacturer_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.Manufacturer_Name.DataPropertyName = "Manufacturer_Name";
-			this.Manufacturer_Name.HeaderText = "Manufacturer Name";
-			this.Manufacturer_Name.Name = "Manufacturer_Name";
 			// 
 			// frmManufacturer
 			// 

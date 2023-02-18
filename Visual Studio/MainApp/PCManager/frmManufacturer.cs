@@ -11,12 +11,21 @@ namespace PCManager
 		{
 			InitializeComponent();
 		}
-
+		/// <summary>
+		/// Close window
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void btnExit_Click(object sender, EventArgs e)
 		{
 			this.Close();
 		}
 
+		/// <summary>
+		/// Form load
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void frmManufacturer_Load(object sender, EventArgs e)
 		{
 			txtManufacturerID.Enabled = false;
@@ -25,6 +34,9 @@ namespace PCManager
 			LoadDataGridView();
 		}
 
+		/// <summary>
+		/// Load data from database to datagridview
+		/// </summary>
 		private void LoadDataGridView()
 		{
 			string sql;
@@ -35,6 +47,11 @@ namespace PCManager
 			dgvManufacturer.EditMode = DataGridViewEditMode.EditProgrammatically;
 		}
 
+		/// <summary>
+		/// Datagridview row click
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void dgvManufacturer_Click(object sender, EventArgs e)
 		{
 			if (btnAdd.Enabled == false)
@@ -55,6 +72,11 @@ namespace PCManager
 			btnDelete.Enabled = true;
 		}
 
+		/// <summary>
+		/// Event when button Add click
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void btnAdd_Click(object sender, EventArgs e)
 		{
 			btnEdit.Enabled = false;
@@ -66,22 +88,31 @@ namespace PCManager
 			txtManufacturerID.Enabled = true;
 			txtManufacturerID.Focus();
 		}
+
+		/// <summary>
+		/// Reset value textbox
+		/// </summary>
 		private void ResetValue()
 		{
 			txtManufacturerID.Text = string.Empty;
 			txtManufacturerName.Text = string.Empty;
 		}
 
+		/// <summary>
+		/// Event when click button Save
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void btnSave_Click(object sender, EventArgs e)
 		{
-			string sql; //Lưu lệnh sql
-			if (txtManufacturerID.Text.Trim().Length == 0) //Nếu chưa nhập mã hãng sản xuất
+			string sql;
+			if (txtManufacturerID.Text.Trim().Length == 0)
 			{
 				MessageBox.Show("Bạn phải nhập hãng sản xuất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				txtManufacturerID.Focus();
 				return;
 			}
-			if (txtManufacturerName.Text.Trim().Length == 0) //Nếu chưa nhập tên hãng sản xuất
+			if (txtManufacturerName.Text.Trim().Length == 0)
 			{
 				MessageBox.Show("Bạn phải nhập tên hãng sản xuất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				txtManufacturerName.Focus();
@@ -96,8 +127,8 @@ namespace PCManager
 			}
 
 			sql = "INSERT INTO tblManufacturer VALUES(N'" + txtManufacturerID.Text + "',N'" + txtManufacturerName.Text + "')";
-			COMMON.RunSQL(sql); //Thực hiện câu lệnh sql
-			LoadDataGridView(); //Nạp lại DataGridView
+			COMMON.RunSQL(sql);
+			LoadDataGridView();
 			ResetValue();
 			btnDelete.Enabled = true;
 			btnAdd.Enabled = true;
@@ -107,20 +138,25 @@ namespace PCManager
 			txtManufacturerID.Enabled = false;
 		}
 
+		/// <summary>
+		/// Event when click button Edit
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void btnEdit_Click(object sender, EventArgs e)
 		{
-			string sql; //Lưu câu lệnh sql
+			string sql;
 			if (tblManufacturer.Rows.Count == 0)
 			{
 				MessageBox.Show("Không còn dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				return;
 			}
-			if (String.IsNullOrEmpty(txtManufacturerID.Text)) //nếu chưa chọn bản ghi nào
+			if (String.IsNullOrEmpty(txtManufacturerID.Text))
 			{
 				MessageBox.Show("Bạn chưa chọn bản ghi nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				return;
 			}
-			if (txtManufacturerName.Text.Trim().Length == 0) //nếu chưa nhập tên hãng sản xuất
+			if (txtManufacturerName.Text.Trim().Length == 0)
 			{
 				MessageBox.Show("Bạn chưa nhập tên hãng sản xuất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				return;
@@ -133,6 +169,11 @@ namespace PCManager
 			btnSkip.Enabled = false;
 		}
 
+		/// <summary>
+		/// Event when click button Delete
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void btnDelete_Click(object sender, EventArgs e)
 		{
 			string sql;
@@ -141,7 +182,7 @@ namespace PCManager
 				MessageBox.Show("Không còn dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				return;
 			}
-			if (String.IsNullOrEmpty(txtManufacturerID.Text)) //nếu chưa chọn bản ghi nào
+			if (String.IsNullOrEmpty(txtManufacturerID.Text))
 			{
 				MessageBox.Show("Bạn chưa chọn bản ghi nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				return;
@@ -155,6 +196,11 @@ namespace PCManager
 			}
 		}
 
+		/// <summary>
+		/// Event when click button Skip
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void btnSkip_Click(object sender, EventArgs e)
 		{
 			ResetValue();

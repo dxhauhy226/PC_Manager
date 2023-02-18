@@ -41,17 +41,17 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.dgvStaff = new System.Windows.Forms.DataGridView();
-			this.Staff_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Staff_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Staff_Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Staff_Addr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Staff_Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.btnAdd = new System.Windows.Forms.Button();
 			this.btnDelete = new System.Windows.Forms.Button();
 			this.btnEdit = new System.Windows.Forms.Button();
 			this.btnExit = new System.Windows.Forms.Button();
 			this.btnSkip = new System.Windows.Forms.Button();
 			this.btnSave = new System.Windows.Forms.Button();
+			this.Staff_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Staff_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Staff_Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Staff_Addr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Staff_Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvStaff)).BeginInit();
@@ -182,36 +182,7 @@
 			this.dgvStaff.Name = "dgvStaff";
 			this.dgvStaff.Size = new System.Drawing.Size(517, 161);
 			this.dgvStaff.TabIndex = 0;
-			// 
-			// Staff_ID
-			// 
-			this.Staff_ID.FillWeight = 50F;
-			this.Staff_ID.HeaderText = "Staff ID";
-			this.Staff_ID.Name = "Staff_ID";
-			this.Staff_ID.Width = 70;
-			// 
-			// Staff_Name
-			// 
-			this.Staff_Name.HeaderText = "Staff Name";
-			this.Staff_Name.Name = "Staff_Name";
-			this.Staff_Name.Width = 150;
-			// 
-			// Staff_Gender
-			// 
-			this.Staff_Gender.HeaderText = "Gender";
-			this.Staff_Gender.Name = "Staff_Gender";
-			this.Staff_Gender.Width = 70;
-			// 
-			// Staff_Addr
-			// 
-			this.Staff_Addr.HeaderText = "Address";
-			this.Staff_Addr.Name = "Staff_Addr";
-			this.Staff_Addr.Width = 200;
-			// 
-			// Staff_Phone
-			// 
-			this.Staff_Phone.HeaderText = "Phone";
-			this.Staff_Phone.Name = "Staff_Phone";
+			this.dgvStaff.Click += new System.EventHandler(this.dgvStaff_Click);
 			// 
 			// btnAdd
 			// 
@@ -221,6 +192,7 @@
 			this.btnAdd.TabIndex = 2;
 			this.btnAdd.Text = "Add";
 			this.btnAdd.UseVisualStyleBackColor = true;
+			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
 			// 
 			// btnDelete
 			// 
@@ -230,6 +202,7 @@
 			this.btnDelete.TabIndex = 3;
 			this.btnDelete.Text = "Delete";
 			this.btnDelete.UseVisualStyleBackColor = true;
+			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
 			// 
 			// btnEdit
 			// 
@@ -239,6 +212,7 @@
 			this.btnEdit.TabIndex = 4;
 			this.btnEdit.Text = "Edit";
 			this.btnEdit.UseVisualStyleBackColor = true;
+			this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
 			// 
 			// btnExit
 			// 
@@ -248,6 +222,7 @@
 			this.btnExit.TabIndex = 7;
 			this.btnExit.Text = "Exit";
 			this.btnExit.UseVisualStyleBackColor = true;
+			this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
 			// 
 			// btnSkip
 			// 
@@ -257,6 +232,7 @@
 			this.btnSkip.TabIndex = 6;
 			this.btnSkip.Text = "Skip";
 			this.btnSkip.UseVisualStyleBackColor = true;
+			this.btnSkip.Click += new System.EventHandler(this.btnSkip_Click);
 			// 
 			// btnSave
 			// 
@@ -266,6 +242,42 @@
 			this.btnSave.TabIndex = 5;
 			this.btnSave.Text = "Save";
 			this.btnSave.UseVisualStyleBackColor = true;
+			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+			// 
+			// Staff_ID
+			// 
+			this.Staff_ID.DataPropertyName = "Staff_ID";
+			this.Staff_ID.FillWeight = 50F;
+			this.Staff_ID.HeaderText = "Staff ID";
+			this.Staff_ID.Name = "Staff_ID";
+			this.Staff_ID.Width = 70;
+			// 
+			// Staff_Name
+			// 
+			this.Staff_Name.DataPropertyName = "Staff_Name";
+			this.Staff_Name.HeaderText = "Staff Name";
+			this.Staff_Name.Name = "Staff_Name";
+			this.Staff_Name.Width = 150;
+			// 
+			// Staff_Gender
+			// 
+			this.Staff_Gender.DataPropertyName = "Staff_Gender";
+			this.Staff_Gender.HeaderText = "Gender";
+			this.Staff_Gender.Name = "Staff_Gender";
+			this.Staff_Gender.Width = 70;
+			// 
+			// Staff_Addr
+			// 
+			this.Staff_Addr.DataPropertyName = "Staff_Addr";
+			this.Staff_Addr.HeaderText = "Address";
+			this.Staff_Addr.Name = "Staff_Addr";
+			this.Staff_Addr.Width = 200;
+			// 
+			// Staff_Phone
+			// 
+			this.Staff_Phone.DataPropertyName = "Staff_Phone";
+			this.Staff_Phone.HeaderText = "Phone";
+			this.Staff_Phone.Name = "Staff_Phone";
 			// 
 			// frmStaff
 			// 
@@ -283,6 +295,7 @@
 			this.Name = "frmStaff";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Staff";
+			this.Load += new System.EventHandler(this.frmStaff_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.groupBox2.ResumeLayout(false);
@@ -306,16 +319,16 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.DataGridView dgvStaff;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Staff_ID;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Staff_Name;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Staff_Gender;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Staff_Addr;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Staff_Phone;
 		private System.Windows.Forms.Button btnAdd;
 		private System.Windows.Forms.Button btnDelete;
 		private System.Windows.Forms.Button btnEdit;
 		private System.Windows.Forms.Button btnExit;
 		private System.Windows.Forms.Button btnSkip;
 		private System.Windows.Forms.Button btnSave;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Staff_ID;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Staff_Name;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Staff_Gender;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Staff_Addr;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Staff_Phone;
 	}
 }
